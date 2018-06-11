@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#animate").click(function(){
+        $("div").animate({left: '250px',background: '#FF0000'});
+		
+    });
+	
+	$("#animateBack").click(function(){
+        $("div").animate({left: '0px',background: '#98bf21'});
+		
+    });
+	
+	$("#drink").click(function(){
+        $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script> 
+</head>
+<body>
+
+<button id="animate">Start Animation</button>
+<button id="animateBack">Rewind</button>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="drink">Drink</button>
+
+<p>Name: Simranjit Singh</p>
+<p id="p1">Student ID: C0696664</p>
+<p> Course: Computer Programmer</p>
+<p> Hobbies:</br>
+			1. Painting</br>
+			2. Playing Football</br>
+			3. Comic Book Collecting</br>
+			4. Coin Collecting</p>
+<div <img src="GautamBeri_Assi01.jpg" alt="My Picture" height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>
